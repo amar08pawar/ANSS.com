@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chapter 11: Alcohols, Phenols, and Ethers</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #000;
+      color: yellow;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 5px solid #ffcc00;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: aqua;
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+
+    .card, .card1 {
+      background-color: #1c1f2b;
+      color: white;
+      width: 300px;
+      padding: 1.5rem;
+      margin: 1rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .card::before, .card1::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: conic-gradient(from 0deg, transparent 0%, blue, red, yellow, orange);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      border-radius: 15px;
+      filter: blur(1.5rem);
+      animation: spin 5s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    table {
+      margin: 2rem auto;
+      width: 90%;
+      border-collapse: collapse;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      font-size: 18px;
+    }
+
+    th, td {
+      padding: 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background-color: #1c1f2b;
+      color: gold;
+      text-transform: uppercase;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+
+    tr:hover {
+      background-color: #e0f7fa;
+    }
+
+    .info-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: #000;
+      color: white;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 20px;
+    }
+
+    .info-text {
+      width: 45%;
+      font-size: 20px;
+      margin-bottom: 1rem;
+    }
+
+    .info-img {
+      width: 45%;
+      height: 300px;
+      background-image: url('sp3.png');
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+    }
+
+    .benzylic-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #1c1f2b;
+      padding: 2rem;
+      border-radius: 20px;
+      margin: 2rem;
+      flex-wrap: wrap;
+      color: white;
+    }
+
+    .img2 {
+      height: 200px;
+      width: 300px;
+      background-image: url('ben.png');
+      background-size: cover;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+
+    .button-box {
+      text-align: center;
+      margin: 3rem auto;
+    }
+
+    .button {
+      background-color: #5af05a;
+      padding: 1rem 2rem;
+      font-size: 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: yellow;
+      color: black;
+      border: 2px solid #222;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: aqua;
+      text-decoration: underline;
+    }
+
+    .ff {
+      text-align: center;
+      font-size: 2rem;
+      margin: 2rem;
+      animation: glow 1s infinite alternate;
+      color: #1c1f2b;
+    }
+
+    @keyframes glow {
+      from { color: #ff4081; }
+      to { color: #00e676; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <h1>Chapter 11: Alcohols, Phenols, and Ethers</h1>
+    <div class="nav-links">
+      <a href="bbb.html">Home</a>
+      <a href="#">Chapter 11</a>
+      <a href="#">Total Weightage</a>
+      <a href="#">Important Questions</a>
+      <a href="#">About Us</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Functional Groups</h2>
+      <ol>
+        <li><h3>R-COOH : Carboxylic Acid</h3></li>
+        <li><h3>R-OH : Alkyl Alcohol</h3></li>
+        <li><h3>R-NH<sub>2</sub> : Alkyl Amine</h3></li>
+        <li><h3>R-O-R : Ether</h3></li>
+      </ol>
+    </div>
+
+    <div class="card1">
+      <h2>Important Hydrocarbons</h2>
+      <h3>CH<sub>4</sub> : Methane</h3>
+      <h3>C<sub>2</sub>H<sub>6</sub> : Ethane</h3>
+      <h3>C<sub>3</sub>H<sub>8</sub> : Propane</h3>
+      <h3>C<sub>4</sub>H<sub>10</sub> : Butane</h3>
+    </div>
+  </div>
+
+  <table>
+    <tr><th colspan="3">Aliphatic Alcohols</th></tr>
+    <tr><th>Monohydric</th><th>Dihydric</th><th>Trihydric</th></tr>
+    <tr>
+      <td>CH<sub>3</sub>-CH<sub>2</sub>-OH</td>
+      <td>CH<sub>2</sub>(OH)-CH<sub>2</sub>(OH)</td>
+      <td>CH<sub>2</sub>(OH)-CH(OH)-CH<sub>2</sub>(OH)</td>
+    </tr>
+    <tr>
+      <td>Ethanol</td>
+      <td>Ethane-1,2-diol</td>
+      <td>Propane-1,2,3-triol</td>
+    </tr>
+  </table>
+
+  <div class="info-section">
+    <div class="info-text">
+      <strong>1. Alcohol Classification:</strong><br>
+      Alcohols with an sp³ C-OH bond are classified as primary, secondary, or tertiary based on how many carbon atoms are attached to the carbon bearing the OH group.
+    </div>
+    <div class=""></div>
+  </div>
+
+  <div class="benzylic-section">
+    <div class="img2"></div>
+    <div>
+      <strong>2. Allylic & Benzylic Alcohols:</strong><br>
+      Allylic alcohols have the OH group attached to a carbon next to a C=C double bond. Benzylic alcohols are next to an aromatic ring.
+    </div>
+  </div>
+
+  <div class="button-box">
+    <button class="button">Classification Based on Hybridization</button>
+  </div>
+
+  <footer>
+    <div>&hearts; Made by ANSS.com | © 1996–2023 ANSS.com</div>
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Send Notes</a>
+      <a href="#">Feedback</a>
+      <a href="#">Instagram</a>
+      <a href="mailto:amar08pawar@gmail.com">Contact: amar08pawar@gmail.com</a>
+    </div>
+  </footer>
+
+  <h1 class="ff">!!..Thanks for visiting us..!!</h1>
+</body>
+</html>

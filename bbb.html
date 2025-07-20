@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ANSS Login | Student Portal</title>
+
+  <!-- Google Fonts + FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #232526, #414345);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #f1f1f1;
+      color: green;
+      border: 5px solid black;
+      width: 60%;
+      margin: 2rem auto;
+      border-radius: 20px;
+      padding: 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      text-decoration: underline;
+    }
+
+    .login {
+      background-color: #ffe4c4;
+      width: 450px;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 30px;
+      text-align: center;
+      color: #000;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .login input {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #888;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .login button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 2s;
+    }
+
+    .login button:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+      border: 2px solid black;
+    }
+
+    .a {
+      display: inline-block;
+      margin: 10px;
+      color: #1c1f2b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .a:hover {
+      text-decoration: underline;
+      color: rgb(52, 164, 234);
+    }
+
+    .menu {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .menu .ae {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      border-radius: 20px;
+      width: 220px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #fff;
+      margin: 5px;
+      font-size: 16px;
+    }
+
+    .menu a:hover {
+      color: aqua;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 4rem;
+      background-color: #1c1f2b;
+      padding: 1rem;
+      text-align: center;
+      color: #ccc;
+    }
+
+    .footer2 {
+      background-color: #000;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .footer2 ul {
+      list-style: none;
+    }
+
+    .footer2 a {
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+      font-size: 15px;
+    }
+
+    .footer2 a:hover {
+      text-decoration: underline;
+      color: #00bcd4;
+    }
+
+    .ff {
+      text-align: center;
+     
+      
+      font-size: 2rem;
+      margin: 2rem auto;
+      
+      animation: glow 0.55s infinite alternate;
+      color: #00e676;
+    }
+
+    @keyframes glow {
+      from { color: #ff4081;
+            
+        
+       }
+
+      to { color: #00e676;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="menu">
+    <details class="de">
+      <summary style="cursor:pointer; color: white; font-size: 18px;"><i class="fas fa-bars"></i> Menu</summary>
+      <div class="ae">
+        <a href="bbb.html">🏠 Home</a>
+        <a href="aaa.html">📘 Chapter 11</a>
+        <a href="#">📊 Total Weightage</a>
+        <a href="#">❓ Important Questions</a>
+        <a href="#">📞 About Us</a>
+      </div>
+    </details>
+  </div>
+
+  <h1>Welcome to ANSS.com – For Students</h1>
+
+  <div class="login">
+    <form>
+      <h2>Login Form</h2>
+      <input type="text" placeholder="Username" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <button type="submit"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+      <br><br>
+      <a href="#" class="a">✨ Create Account</a> |
+      <a href="#" class="a">🔑 Forgot Password</a>
+    </form>
+  </div>
+
+  <footer>
+    <div>Made with <span style="color:red;">♥</span> by ANSS.com<br>
+    &copy; 1996–2023 ANSS.com, Inc. or its affiliates</div>
+
+    <div class="footer2">
+      <ul>
+        <a href="#">About Us</a>
+        <a href="#">Create a memory with us</a>
+        <a href="#">Send Notes</a>
+        <a href="#">Send Feedback</a>
+      </ul>
+      <ul>
+        <a href="#">Careers @ ANSS</a>
+        <a href="#">Inspired by Shalla.com</a>
+        <a href="#">Join us on Instagram</a>
+        <a href="#">Created by ANSS CEO</a>
+        <a href="mailto:amar08pawar@gmail.com">amar08pawar@gmail.com</a>
+      </ul>
+    </div>
+  </footer>
+
+  <h1 class="ff">!!..Thanks for visiting us..!!</h1>
+
+</body>
+</html>
